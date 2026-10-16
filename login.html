@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تسجيل الدخول</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <div class="background-shapes">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
+
+
+        <div class="login-card">
+
+            <h2>تسجيل الدخول</h2>
+
+
+            <form
+                class="form"
+                id="login-form"
+            >
+
+                <input
+                    type="email"
+                    id="login-email"
+                    name="login-email"
+                    placeholder="البريد الإلكتروني"
+                    required
+                >
+
+
+                <input
+                    type="password"
+                    id="login-password"
+                    name="login-password"
+                    placeholder="كلمة المرور"
+                    required
+                >
+
+
+                <button
+                    class="button"
+                    id="login-button"
+                    type="submit"
+                >
+                    تسجيل دخول
+                </button>
+
+            </form>
+
+
+            <div class="social-login">
+
+                <p>
+                    أو تسجيل الدخول باستخدام
+                </p>
+
+                <button
+                    class="google-btn"
+                    id="google-login-button"
+                    type="button"
+                >
+                    Google
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

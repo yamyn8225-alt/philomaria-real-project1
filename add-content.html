@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إضافة محتوى - Philomaria</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="teacher-form-page">
+
+        <div class="teacher-form-container">
+
+            <a
+                href="teacher.html"
+                class="form-back-button"
+            >
+                العودة للوحة المدرس
+            </a>
+
+
+            <div class="form-header">
+
+                <h1>
+                    إضافة محتوى جديد
+                </h1>
+
+                <p>
+                    إضافة محاضرة أو ملف لأحد الكورسات.
+                </p>
+
+            </div>
+
+
+            <form
+                class="teacher-form"
+                id="content-form"
+            >
+
+                <!-- Course -->
+                <label for="content-course">
+                    اختر الكورس
+                </label>
+
+                <select
+                    id="content-course"
+                    name="content-course"
+                    required
+                >
+
+                    <option value="">
+                        اختر الكورس
+                    </option>
+
+                </select>
+
+
+                <!-- Content Type -->
+                <label for="content-type">
+                    نوع المحتوى
+                </label>
+
+                <select
+                    id="content-type"
+                    name="content-type"
+                    required
+                >
+
+                    <option value="">
+                        اختر النوع
+                    </option>
+
+                    <option value="lecture">
+                        محاضرة فيديو
+                    </option>
+
+                    <option value="file">
+                        ملف
+                    </option>
+
+                </select>
+
+
+                <!-- Content Title -->
+                <label for="content-title">
+                    عنوان المحتوى
+                </label>
+
+                <input
+                    type="text"
+                    id="content-title"
+                    name="content-title"
+                    placeholder="مثال: مقدمة في الكتاب المقدس"
+                    required
+                >
+
+
+                <!-- Description -->
+                <label for="content-description">
+                    وصف المحتوى
+                </label>
+
+                <textarea
+                    id="content-description"
+                    name="content-description"
+                    placeholder="اكتب وصفًا مختصرًا..."
+                    rows="5"
+                ></textarea>
+
+
+                <!-- YouTube URL -->
+                <div
+                    id="video-field"
+                    hidden
+                >
+
+                    <label for="video-url">
+                        رابط فيديو YouTube
+                    </label>
+
+                    <input
+                        type="url"
+                        id="video-url"
+                        name="video-url"
+                        placeholder="https://www.youtube.com/watch?v=..."
+                    >
+
+                </div>
+
+
+                <!-- General File -->
+                <div
+                    id="file-field"
+                    hidden
+                >
+
+                    <label for="content-file">
+                        رفع ملف
+                    </label>
+
+                    <input
+                        type="file"
+                        id="content-file"
+                        name="content-file"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="teacher-submit-button"
+                    id="add-content-button"
+                >
+                    إضافة المحتوى
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="add-content.js"></script>
+
+</body>
+
+</html>

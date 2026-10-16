@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>لوحة المدرس - Philomaria</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="teacher-page">
+
+        <!-- ============================= -->
+        <!-- SIDEBAR -->
+        <!-- ============================= -->
+
+        <nav class="teacher-sidebar">
+
+            <div class="teacher-logo">
+
+                <img
+                    src="philomaria .png"
+                    alt="Philomaria Logo"
+                >
+
+            </div>
+
+
+            <div class="teacher-nav-links">
+
+                <a href="#dashboard">
+                    الرئيسية
+                </a>
+
+                <a href="#teacher-courses">
+                    الكورسات
+                </a>
+
+                <a href="#teacher-exams">
+                    الاختبارات
+                </a>
+
+                <a href="#teacher-results">
+                    نتائج الطلاب
+                </a>
+
+                <a
+                    href="#"
+                    id="teacher-logout"
+                >
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- ============================= -->
+        <!-- CONTENT -->
+        <!-- ============================= -->
+
+        <div class="teacher-content">
+
+
+            <!-- ============================= -->
+            <!-- DASHBOARD -->
+            <!-- ============================= -->
+
+            <section
+                class="teacher-welcome"
+                id="dashboard"
+            >
+
+                <h1>
+                    لوحة المدرس
+                </h1>
+
+                <p>
+                    من هنا يمكنك إنشاء وإدارة الكورسات،
+                    وإضافة المحاضرات والملفات والاختبارات
+                    ومتابعة نتائج الطلاب.
+                </p>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- YEAR / TERM FILTER -->
+            <!-- ============================= -->
+
+            <section class="teacher-filter-section">
+
+                <div class="teacher-section-header">
+
+                    <div>
+
+                        <h2>
+                            اختيار السنة والترم
+                        </h2>
+
+                        <p>
+                            اختر السنة الدراسية والترم لعرض البيانات الخاصة بهما.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="teacher-filter-controls">
+
+                    <!-- Study Year -->
+                    <div>
+
+                        <label for="teacher-study-year">
+                            السنة الدراسية
+                        </label>
+
+                        <select
+                            id="teacher-study-year"
+                            name="teacher-study-year"
+                        >
+
+                            <option value="">
+                                كل السنوات
+                            </option>
+
+                            <option value="1">
+                                السنة الأولى
+                            </option>
+
+                            <option value="2">
+                                السنة الثانية
+                            </option>
+
+                            <option value="3">
+                                السنة الثالثة
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Study Term -->
+                    <div>
+
+                        <label for="teacher-study-term">
+                            الترم
+                        </label>
+
+                        <select
+                            id="teacher-study-term"
+                            name="teacher-study-term"
+                        >
+
+                            <option value="">
+                                كل الترمات
+                            </option>
+
+                            <option value="1">
+                                الترم الأول
+                            </option>
+
+                            <option value="2">
+                                الترم الثاني
+                            </option>
+
+                            <option value="3">
+                                الترم الثالث
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- COURSES -->
+            <!-- ============================= -->
+
+            <section
+                class="teacher-courses"
+                id="teacher-courses"
+            >
+
+                <div class="teacher-section-header">
+
+                    <div>
+
+                        <h2>
+                            الكورسات
+                        </h2>
+
+                        <p>
+                            إنشاء وإدارة الكورسات التعليمية.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="create-course.html"
+                        class="create-exam-button"
+                    >
+                        + إنشاء كورس جديد
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="teacher-courses-container"
+                    id="teacher-courses-container"
+                >
+                </div>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- EXAMS -->
+            <!-- ============================= -->
+
+            <section
+                class="teacher-exams"
+                id="teacher-exams"
+            >
+
+                <div class="teacher-section-header">
+
+                    <div>
+
+                        <h2>
+                            الاختبارات
+                        </h2>
+
+                        <p>
+                            إنشاء وإدارة اختبارات الطلاب.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="create-exam.html"
+                        class="create-exam-button"
+                    >
+                        + إنشاء اختبار جديد
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="teacher-empty-state"
+                    id="teacher-exams-container"
+                >
+                </div>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- STUDENT RESULTS -->
+            <!-- ============================= -->
+
+            <section
+                class="teacher-results"
+                id="teacher-results"
+            >
+
+                <div class="teacher-section-header">
+
+                    <div>
+
+                        <h2>
+                            نتائج الطلاب
+                        </h2>
+
+                        <p>
+                            متابعة درجات الطلاب في الاختبارات
+                            حسب السنة الدراسية والترم.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="teacher-results-container"
+                    id="teacher-results-container"
+                >
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+    <script src="config.js"></script>
+
+    <script src="teacher.js"></script>
+
+</body>
+
+</html>

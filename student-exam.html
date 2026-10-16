@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        الامتحان - Philomaria
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="index.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main class="student-exam-page">
+
+
+        <!-- ========================================= -->
+        <!-- HEADER -->
+        <!-- ========================================= -->
+
+        <header class="student-exam-header">
+
+            <a
+                href="student.html"
+                class="back-button"
+            >
+                العودة
+            </a>
+
+
+            <div>
+
+                <h1 id="exam-title">
+                    جاري تحميل الامتحان...
+                </h1>
+
+
+                <p id="exam-course-title">
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ========================================= -->
+        <!-- EXAM INFORMATION -->
+        <!-- ========================================= -->
+
+        <section
+            class="student-exam-info"
+            id="exam-info"
+        >
+
+            <p>
+
+                مدة الامتحان:
+
+                <strong id="exam-duration">
+                    -
+                </strong>
+
+                دقيقة
+
+            </p>
+
+
+            <p>
+
+                درجة النجاح:
+
+                <strong id="exam-passing-grade">
+                    -
+                </strong>
+
+                %
+
+            </p>
+
+
+            <p>
+
+                الوقت المتبقي:
+
+                <strong id="exam-timer">
+                    --:--
+                </strong>
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ========================================= -->
+        <!-- MESSAGE -->
+        <!-- ========================================= -->
+
+        <div
+            id="exam-message"
+            class="exam-message"
+        >
+        </div>
+
+
+
+        <!-- ========================================= -->
+        <!-- EXAM FORM -->
+        <!-- ========================================= -->
+
+        <form
+            id="student-exam-form"
+            class="student-exam-form"
+        >
+
+
+            <div
+                id="exam-questions-container"
+                class="exam-questions-container"
+            >
+
+                <p>
+                    جاري تحميل الأسئلة...
+                </p>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                id="submit-exam-button"
+                class="button"
+            >
+
+                تسليم الامتحان
+
+            </button>
+
+        </form>
+
+
+
+        <!-- ========================================= -->
+        <!-- RESULT -->
+        <!-- ========================================= -->
+
+        <section
+            id="exam-result"
+            class="exam-result"
+            hidden
+        >
+
+            <h2>
+                نتيجة الامتحان
+            </h2>
+
+
+            <p>
+
+                الدرجة:
+
+                <strong id="result-score">
+                    -
+                </strong>
+
+                %
+
+            </p>
+
+
+            <p>
+
+                الإجابات الصحيحة:
+
+                <strong id="result-correct">
+                    -
+                </strong>
+
+                من
+
+                <strong id="result-total">
+                    -
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                الحالة:
+
+                <strong id="result-status">
+                    -
+                </strong>
+
+            </p>
+
+
+            <a
+                id="back-to-course-button"
+                href="student.html"
+                class="az"
+            >
+                العودة للكورس
+            </a>
+
+        </section>
+
+
+    </main>
+     <script src="config.js"></script>
+
+    <script src="student-exam.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إنشاء اختبار - Philomaria</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="teacher-form-page">
+
+        <div class="teacher-form-container exam-form-container">
+
+            <a href="teacher.html" class="form-back-button">
+                العودة للوحة المدرس
+            </a>
+
+            <div class="form-header">
+
+                <h1>
+                    إنشاء اختبار جديد
+                </h1>
+
+                <p>
+                    قم بإضافة بيانات الاختبار والأسئلة.
+                </p>
+
+            </div>
+
+
+            <form
+                class="teacher-form"
+                id="exam-form"
+            >
+
+                <!-- Course -->
+                <label for="exam-course">
+                    الكورس
+                </label>
+
+                <select
+                    id="exam-course"
+                    name="exam-course"
+                    required
+                >
+
+                    <option value="">
+                        اختر الكورس
+                    </option>
+
+                </select>
+
+
+                <!-- Exam Type -->
+                <label for="exam-type">
+                    نوع الاختبار
+                </label>
+
+                <select
+                    id="exam-type"
+                    name="exam-type"
+                    required
+                >
+
+                    <option value="">
+                        اختر نوع الاختبار
+                    </option>
+
+                    <option value="course">
+                        اختبار عام على الكورس
+                    </option>
+
+                    <option value="lecture">
+                        اختبار على محاضرة
+                    </option>
+
+                </select>
+
+
+                <!-- Lecture Wrapper -->
+                <div
+                    id="lecture-select-wrapper"
+                    style="display: none;"
+                >
+
+                    <label for="exam-lecture">
+                        المحاضرة
+                    </label>
+
+                    <select
+                        id="exam-lecture"
+                        name="exam-lecture"
+                        disabled
+                    >
+
+                        <option value="">
+                            اختر الكورس أولاً
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Exam Title -->
+                <label for="exam-title">
+                    اسم الاختبار
+                </label>
+
+                <input
+                    type="text"
+                    id="exam-title"
+                    name="exam-title"
+                    placeholder="مثال: اختبار المحاضرة الأولى"
+                    required
+                >
+
+
+                <!-- Exam Settings -->
+                <div class="exam-settings">
+
+                    <div>
+
+                        <label for="exam-duration">
+                            مدة الاختبار بالدقائق
+                        </label>
+
+                        <input
+                            type="number"
+                            id="exam-duration"
+                            name="exam-duration"
+                            min="1"
+                            placeholder="30"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="passing-grade">
+                            درجة النجاح %
+                        </label>
+
+                        <input
+                            type="number"
+                            id="passing-grade"
+                            name="passing-grade"
+                            min="0"
+                            max="100"
+                            placeholder="60"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Questions -->
+                <div id="questions-container">
+
+                    <div
+                        class="question-builder"
+                        id="question-builder-1"
+                        data-question-number="1"
+                    >
+
+                        <h2>
+                            السؤال الأول
+                        </h2>
+
+
+                        <label for="question-1">
+                            السؤال
+                        </label>
+
+                        <input
+                            type="text"
+                            id="question-1"
+                            class="question-input"
+                            name="question-1"
+                            placeholder="اكتب السؤال هنا"
+                            required
+                        >
+
+
+                        <label>
+                            الإجابات
+                        </label>
+
+
+                        <!-- Answer 1 -->
+                        <div class="answer-option">
+
+                            <input
+                                type="radio"
+                                id="correct-answer-1-1"
+                                name="correct-answer-1"
+                                value="1"
+                                required
+                            >
+
+                            <input
+                                type="text"
+                                class="answer-input"
+                                id="question-1-answer-1"
+                                name="question-1-answer-1"
+                                placeholder="الإجابة الأولى"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Answer 2 -->
+                        <div class="answer-option">
+
+                            <input
+                                type="radio"
+                                id="correct-answer-1-2"
+                                name="correct-answer-1"
+                                value="2"
+                            >
+
+                            <input
+                                type="text"
+                                class="answer-input"
+                                id="question-1-answer-2"
+                                name="question-1-answer-2"
+                                placeholder="الإجابة الثانية"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Answer 3 -->
+                        <div class="answer-option">
+
+                            <input
+                                type="radio"
+                                id="correct-answer-1-3"
+                                name="correct-answer-1"
+                                value="3"
+                            >
+
+                            <input
+                                type="text"
+                                class="answer-input"
+                                id="question-1-answer-3"
+                                name="question-1-answer-3"
+                                placeholder="الإجابة الثالثة"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Answer 4 -->
+                        <div class="answer-option">
+
+                            <input
+                                type="radio"
+                                id="correct-answer-1-4"
+                                name="correct-answer-1"
+                                value="4"
+                            >
+
+                            <input
+                                type="text"
+                                class="answer-input"
+                                id="question-1-answer-4"
+                                name="question-1-answer-4"
+                                placeholder="الإجابة الرابعة"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Add Question -->
+                <button
+                    type="button"
+                    class="add-question-button"
+                    id="add-question-button"
+                >
+                    + إضافة سؤال
+                </button>
+
+
+                <!-- Create Exam -->
+                <button
+                    type="submit"
+                    class="teacher-submit-button"
+                    id="create-exam-button"
+                >
+                    إنشاء الاختبار
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="create-exam.js"></script>
+
+</body>
+
+</html>

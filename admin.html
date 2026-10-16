@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        لوحة تحكم الأدمن - Philomaria
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="index.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header class="admin-header">
+
+        <div class="container">
+
+            <div class="admin-header-content">
+
+                <h1>
+                    لوحة تحكم الأدمن
+                </h1>
+
+
+                <button
+                    id="logout-button"
+                    type="button"
+                >
+                    تسجيل الخروج
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================= -->
+    <!-- MAIN -->
+    <!-- ========================================= -->
+
+    <main class="admin-page">
+
+        <div class="container">
+
+
+            <!-- ================================= -->
+            <!-- WELCOME -->
+            <!-- ================================= -->
+
+            <section class="admin-welcome">
+
+                <h2>
+                    مرحبًا بك في لوحة الإدارة
+                </h2>
+
+                <p>
+                    يمكنك من هنا إدارة المستخدمين،
+                    قبول أو رفض الحسابات،
+                    تحديد الصلاحيات،
+                    وإدارة وصول الطلاب للكورسات.
+                </p>
+
+            </section>
+
+
+
+            <!-- ================================= -->
+            <!-- USERS MANAGEMENT -->
+            <!-- ================================= -->
+
+            <section class="admin-section">
+
+                <div class="admin-section-header">
+
+                    <h2>
+                        إدارة المستخدمين
+                    </h2>
+
+                    <p>
+                        يمكنك إدارة حالة الحساب،
+                        عضوية الكنيسة،
+                        نوع المستخدم،
+                        أو حذف المستخدم.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="admin-users-container"
+                    class="admin-users-container"
+                >
+
+                    <p>
+                        جاري تحميل المستخدمين...
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================================= -->
+            <!-- GRANT COURSE ACCESS -->
+            <!-- ================================= -->
+
+            <section class="admin-section">
+
+                <div class="admin-section-header">
+
+                    <h2>
+                        تفعيل كورس لطالب
+                    </h2>
+
+                    <p>
+                        بعد التأكد من استلام قيمة الكورس،
+                        اختر الطالب والكورس ثم قم بالتفعيل.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-access-form">
+
+
+                    <!-- STUDENT -->
+
+                    <div class="form-group">
+
+                        <label for="access-student">
+                            اختر الطالب
+                        </label>
+
+                        <select
+                            id="access-student"
+                        >
+
+                            <option value="">
+                                اختر الطالب
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="form-group">
+
+                        <label for="access-course">
+                            اختر الكورس
+                        </label>
+
+                        <select
+                            id="access-course"
+                        >
+
+                            <option value="">
+                                اختر الكورس
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- GRANT BUTTON -->
+
+                    <button
+                        id="grant-access-button"
+                        type="button"
+                    >
+                        تفعيل الكورس للطالب
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================================= -->
+            <!-- ACTIVE COURSE ACCESS -->
+            <!-- ================================= -->
+
+            <section class="admin-section">
+
+                <div class="admin-section-header">
+
+                    <h2>
+                        الكورسات المفعلة للطلاب
+                    </h2>
+
+                    <p>
+                        يمكنك من هنا مراجعة الكورسات
+                        التي تم تفعيلها يدويًا،
+                        وإلغاء أي تفعيل تم بالخطأ.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="course-access-container"
+                    class="course-access-container"
+                >
+
+                    <p>
+                        جاري تحميل الكورسات المفعلة...
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ========================================= -->
+    <!-- CONFIRM DELETE MODAL -->
+    <!-- ========================================= -->
+
+    <div
+        id="delete-user-modal"
+        class="admin-modal"
+        hidden
+    >
+
+        <div class="admin-modal-content">
+
+            <h3>
+                حذف المستخدم
+            </h3>
+
+            <p id="delete-user-message">
+                هل أنت متأكد من حذف هذا المستخدم؟
+            </p>
+
+
+            <div class="admin-modal-actions">
+
+                <button
+                    id="confirm-delete-user"
+                    type="button"
+                >
+                    نعم، حذف المستخدم
+                </button>
+
+
+                <button
+                    id="cancel-delete-user"
+                    type="button"
+                >
+                    إلغاء
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================================= -->
+    <!-- CONFIRM REVOKE COURSE MODAL -->
+    <!-- ========================================= -->
+
+    <div
+        id="revoke-course-modal"
+        class="admin-modal"
+        hidden
+    >
+
+        <div class="admin-modal-content">
+
+            <h3>
+                إلغاء تفعيل الكورس
+            </h3>
+
+            <p id="revoke-course-message">
+                هل أنت متأكد من إلغاء تفعيل هذا الكورس؟
+            </p>
+
+
+            <div class="admin-modal-actions">
+
+                <button
+                    id="confirm-revoke-course"
+                    type="button"
+                >
+                    نعم، إلغاء التفعيل
+                </button>
+
+
+                <button
+                    id="cancel-revoke-course"
+                    type="button"
+                >
+                    رجوع
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================================= -->
+    <!-- SCRIPT -->
+    <!-- ========================================= -->
+    <script src="config.js"></script>
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

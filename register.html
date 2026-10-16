@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إنشاء حساب - Philomaria</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <div class="background-shapes">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
+
+
+        <div class="login-card">
+
+            <h2>إنشاء حساب</h2>
+
+
+            <form
+                class="form"
+                id="register-form"
+            >
+
+                <!-- صورة المستخدم -->
+                <input
+                    type="file"
+                    id="profile-image"
+                    name="profile-image"
+                    accept="image/*"
+                >
+
+
+                <!-- اسم المستخدم -->
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="اسم المستخدم"
+                    required
+                >
+
+
+                <!-- البريد الإلكتروني -->
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="البريد الإلكتروني"
+                    required
+                >
+
+
+                <!-- رقم التليفون -->
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="رقم التليفون"
+                    inputmode="tel"
+                    required
+                >
+
+
+                <!-- كلمة المرور -->
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="كلمة المرور"
+                    required
+                >
+
+
+                <!-- السنة الدراسية -->
+                <select
+                    id="study-year"
+                    name="study-year"
+                    required
+                >
+
+                    <option value="">
+                        اختر السنة الدراسية
+                    </option>
+
+                    <option value="1">
+                        السنة الأولى
+                    </option>
+
+                    <option value="2">
+                        السنة الثانية
+                    </option>
+
+                    <option value="3">
+                        السنة الثالثة
+                    </option>
+
+                </select>
+
+
+                <!-- الترم -->
+                <select
+                    id="study-term"
+                    name="study-term"
+                    required
+                >
+
+                    <option value="">
+                        اختر الترم
+                    </option>
+
+                    <option value="1">
+                        الترم الأول
+                    </option>
+
+                    <option value="2">
+                        الترم الثاني
+                    </option>
+
+                    <option value="3">
+                        الترم الثالث
+                    </option>
+
+                </select>
+
+
+                <!-- اسم الكنيسة -->
+                <input
+                    type="text"
+                    id="church-name"
+                    name="church-name"
+                    placeholder="اسم الكنيسة"
+                    required
+                >
+
+
+                <button
+                    class="button"
+                    id="register-button"
+                    type="submit"
+                >
+                    إنشاء حساب
+                </button>
+
+            </form>
+
+
+           
+            
+
+        </div>
+
+    </main>
+
+     <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,5284 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    direction: rtl;
+
+    background-color: #F8F6F0;
+
+}
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+.navbar {
+
+    background-color: #243B53;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 8%;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+.logo img {
+
+    width: 100px;
+
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+
+
+.bottoms {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+.bottoms a {
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* تسجيل الدخول */
+
+.one {
+
+    color: #e6e9ec;
+
+    border: 2px solid #e30f0f;
+
+
+
+}
+
+.one:hover {
+
+    background-color: red;
+
+    color: white;
+
+}
+
+
+
+/* إنشاء حساب */
+
+.two {
+
+    color: white;
+
+    border:2px solid #D4A017;
+
+}
+
+.two:hover{
+
+    background-color:#D4A017;
+
+    color: white;
+
+}
+
+.hero_section{
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 8%;
+
+    background: linear-gradient(
+
+    135deg,
+
+    #FFFFFF,
+
+    #F5E6C8
+
+);
+
+
+
+}
+
+.church-bg {
+    position: absolute;
+    width: 650px;
+    left: 20px;
+    bottom: 80px;
+    mix-blend-mode: multiply;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero_img img {
+
+    position: relative;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+}
+
+
+
+.des_hero {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.des_hero h2 {
+
+    font-size: 45px;
+
+    color: #0B1F3A;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.des_hero p {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    background-color: #e30f0f;
+    color: aliceblue;
+
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.Courses_Section{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 60px 8%;
+
+    gap: 40px;
+
+}
+
+.card{
+
+    flex-direction: column;
+
+    width: 300px;
+
+    margin-top: 60px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(11,31,58,0.1);
+
+
+
+}
+
+.card img{
+
+    width: 100%;
+
+    height: 300px;
+
+    border: 2px solid #F0E6D2;
+
+    object-fit: cover;
+
+}
+
+.card-content {
+
+    text-align: right;
+
+    padding-top: 20px;
+
+}
+
+.card-content h3 {
+
+    color: #0B1F3A;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+    font-weight: bold;
+
+}
+
+.card-content p {
+
+    color: #5B6770;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+/*mobile*/
+
+@media (max-width: 768px) {
+
+
+
+    /* Navbar */
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 15px 5%;
+
+    }
+
+
+
+
+
+    .logo img {
+
+        width: 100px;
+
+    }
+
+
+
+
+
+    .bottoms {
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 15px;
+
+    }
+
+
+
+
+
+    .bottoms a {
+
+        padding: 8px 15px;
+
+        font-size: 14px;
+
+    }
+
+
+
+
+
+
+
+    /* Hero */
+
+    .hero_section {
+
+        flex-direction: column;
+
+        padding: 50px 5%;
+
+        text-align: center;
+
+    }
+
+
+
+
+
+    .hero_img {
+
+        order: 1;
+
+    }
+
+
+
+
+
+    .des_hero {
+
+        order: 2;
+
+        width: 100%;
+
+    }
+
+
+
+
+
+    .hero_img img {
+
+        width: 300px;
+
+    }
+
+
+
+
+
+    .des_hero h2 {
+
+        font-size: 32px;
+
+    }
+
+
+
+
+
+    .des_hero p {
+
+        font-size: 16px;
+
+    }
+
+
+
+
+
+    .hero-btn {
+
+        margin-top: 20px;
+
+    }
+
+
+
+
+
+
+
+    /* Church background */
+
+    .church-bg {
+
+        width: 180px;
+
+        opacity: 0.08;
+
+        left: -20px;
+
+    }
+
+
+
+    /* Cards */
+
+    .Courses_Section {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 40px 5%;
+
+    }
+
+
+
+
+
+    .card {
+
+        width: 90%;
+
+        padding: 15px;
+
+    }
+
+
+
+
+
+    .card img {
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+}
+
+
+
+
+
+    .card-content {
+
+        padding-top: 15px;
+
+    }
+
+
+
+
+
+    .card-content h3 {
+
+        font-size: 20px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+
+
+
+    .card-content p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+
+    /* Navbar */
+
+    .navbar {
+
+        padding: 15px 5%;
+
+    }
+
+
+
+    .logo img {
+
+        width: 90px;
+
+    }
+
+
+
+
+
+    .bottoms a {
+
+        font-size: 15px;
+
+        padding: 8px 18px;
+
+    }
+
+
+
+
+
+
+
+    /* Hero */
+
+    .hero_section {
+
+        gap: 30px;
+
+        padding: 60px 5%;
+
+    }
+
+
+
+
+
+    .hero_img img {
+
+        width: 380px;
+
+    }
+
+
+
+
+
+    .des_hero {
+
+        width: 45%;
+
+    }
+
+
+
+
+
+    .des_hero h2 {
+
+        font-size: 38px;
+
+    }
+
+
+
+
+
+    .des_hero p {
+
+        font-size: 17px;
+
+    }
+
+
+
+
+
+
+
+    /* Church */
+
+    .church-bg {
+
+        width: 250px;
+
+        opacity: 0.08;
+
+    }
+
+
+
+
+
+
+
+    /* Cards */
+
+    .Courses_Section {
+
+        flex-wrap: wrap;
+
+        gap: 25px;
+
+        padding: 50px 5%;
+
+    }
+
+
+
+
+
+    .card {
+
+        width: 45%;
+
+    }
+
+
+
+}
+
+
+
+/* صفحة تسجيل الدخول */
+
+.login-page {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #FFF8E7;
+
+    height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+/* الدائرة الكبيرة الشفافة خلف الفورم */
+
+.circle1 {
+
+    width: 800px;
+
+    height: 800px;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+
+
+    background: rgba(255, 255, 255, 0.25);
+
+
+
+    backdrop-filter: blur(10px);
+
+
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+
+
+    box-shadow:
+
+        0 20px 50px rgba(212,160,23,0.2),
+
+        inset 0 0 50px rgba(255,255,255,0.5);
+
+
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+
+    z-index: 1;
+
+}
+
+
+
+
+
+/* دائرة ذهبية صغيرة للزينة */
+
+.circle2 {
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+
+
+    position: absolute;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #D4A017,
+
+        #F5E6C8
+
+    );
+
+
+
+    top: 120px;
+
+    right: 200px;
+
+
+
+    z-index: 0;
+
+}
+
+
+
+
+
+/* دائرة صغيرة إضافية */
+
+.circle3 {
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50%;
+
+
+
+    position: absolute;
+
+
+
+    background: linear-gradient(
+
+        135deg,
+
+        #E8B93A,
+
+        #F5E6C8
+
+    );
+
+
+
+    bottom: 150px;
+
+    left: 250px;
+
+
+
+    z-index: 0;
+
+}
+
+/* الفورم فوق الدائرة */
+
+.login-card {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+}
+
+.form input{
+
+    background: rgba(255, 255, 255, 0.35);
+
+    border: 1px solid rgba(212, 160, 23, 0.4);
+
+    color: #0B1F3A;
+
+    outline: none;
+
+    padding: 12px 15px;
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+
+    font-size: 16px;
+
+}
+
+.form input::placeholder{
+
+    color: #0B1F3A;
+
+    opacity: 0.6;
+
+}
+
+.social-login {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+.social-login p {
+
+    color: #0B1F3A;
+
+    font-size: 16px;
+
+    margin: 6px;
+
+}
+
+
+
+.google-btn {
+
+    width: 200px;
+
+    padding: 12px 20px;
+
+    background-color: #ffffff;
+
+    color: #0B1F3A;
+
+    border: 1px solid rgba(212,160,23,0.5);
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+.google-btn:hover {
+
+    background-color: #D4A017;
+
+    color: white;
+
+}
+
+
+
+.button{
+
+    background-color: #e30f0f;
+
+    color: aliceblue;
+
+    font-size: 20px;
+
+    padding: 12px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+
+.main {
+
+    width: 100%;
+
+    height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.jesus {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: absolute;
+
+    z-index: 1;
+
+}
+
+
+
+.jesus-img {
+
+    width: auto;
+
+    height: 100vh;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+}
+
+
+
+.navbar_student {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+
+
+    width: 220px;
+
+    height: 100vh;
+
+    background-color: #243B53;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    padding: 30px 15px;
+
+    box-sizing: border-box;
+
+    margin-top: 10px;
+
+    z-index: 1000;
+
+}
+
+
+
+.nav-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+
+
+    width: 100%;
+
+    gap: 25px;
+
+
+
+
+
+}
+
+
+
+.nav-links .aa {
+
+    width: 100%;
+
+    padding: 12px;
+
+
+
+    box-sizing: border-box;
+
+
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+
+
+    border-radius: 8px;
+
+
+
+    cursor: pointer;
+
+}
+
+
+
+.nav-links .aa:hover {
+
+    background-color: #e30f0f;
+
+}
+
+
+
+.welcome-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+
+
+    padding: 40px 20px 0;
+
+    margin: 0;
+
+}
+
+
+
+.welcome-section h1 {
+
+    margin: 0 0 10px;
+
+
+
+    font-family: sans-serif;
+
+    font-size: 32px;
+
+
+
+    color: #e30f0f;
+
+}
+
+
+
+.welcome-section p {
+
+    margin: 0;
+
+
+
+    font-family: sans-serif;
+
+    font-size: 18px;
+
+
+
+    color: deeppink;
+
+}
+
+
+
+
+
+/* عنوان الكورسات */
+
+.courses-section h1 {
+
+    text-align: center;
+
+
+
+    color: #e30f0f;
+
+
+
+    margin-top: 60px;
+
+}
+
+
+
+
+
+/* حاوية الكروت */
+
+.courses-container {
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(4, 300px);
+
+
+
+    gap: 20px;
+
+
+
+    width: 100%;
+
+
+
+    justify-content: center;
+
+}
+
+
+
+
+
+/* الكارت */
+
+.course-card {
+
+    width: 300px;
+
+    height: 450px;
+
+
+
+    background: #ffffff;
+
+
+
+    border-radius: 10px;
+
+
+
+    box-sizing: border-box;
+
+
+
+    box-shadow: 0 5px 20px rgba(11, 31, 58, 0.1);
+
+
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+/* صورة الكورس */
+
+.course-card img {
+
+    width: 100%;
+
+    height: 290px;
+
+
+
+    object-fit: cover;
+
+
+
+    display: block;
+
+}
+
+
+
+
+
+/* محتوى الكارت */
+
+.course-content {
+
+    text-align: center;
+
+
+
+    padding: 20px;
+
+}
+
+
+
+
+
+/* زر الكورس */
+
+.az {
+
+    background-color: #e30f0f;
+
+
+
+    color: #ffffff;
+
+
+
+    font-family: sans-serif;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    padding: 10px 20px;
+
+
+
+    cursor: pointer;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+/* Hover */
+
+.az:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* =========================
+
+   Profile Page
+
+\========================= */
+
+
+
+.profile-page {
+
+    min-height: 100vh;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    background-color: #f8f6f0;
+
+
+
+    font-family: sans-serif;
+
+
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+/* ===================================== */
+/* PROFILE PAGE */
+/* ===================================== */
+
+.profile-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #F8F6F0;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ===================================== */
+/* PROFILE CARD */
+/* ===================================== */
+
+.profile-card {
+
+    width: 500px;
+
+    max-width: 100%;
+
+    background-color: #ffffff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    box-sizing: border-box;
+
+}
+
+
+/* ===================================== */
+/* PROFILE HEADER */
+/* ===================================== */
+
+.profile-header {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.profile-header h1 {
+
+    color: #243B53;
+
+    font-size: 30px;
+
+    margin: 0 0 8px;
+
+}
+
+
+.profile-header p {
+
+    color: #777777;
+
+    font-size: 15px;
+
+    margin: 0;
+
+}
+
+
+/* ===================================== */
+/* PROFILE IMAGE */
+/* ===================================== */
+
+.profile-image-container {
+
+    width: 140px;
+
+    height: 140px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background-color: #eeeeee;
+
+    border: 4px solid #243B53;
+
+    margin-bottom: 25px;
+
+    flex-shrink: 0;
+
+}
+
+
+.profile-image-container img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* ===================================== */
+/* PROFILE INFO */
+/* ===================================== */
+
+.profile-info {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.profile-info h2 {
+
+    color: #243B53;
+
+    font-size: 25px;
+
+    margin: 0 0 20px;
+
+}
+
+
+/* ===================================== */
+/* PROFILE DATA ROW */
+/* ===================================== */
+
+.profile-data-row {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #777777;
+
+    font-size: 16px;
+
+    text-align: right;
+
+}
+
+
+.profile-data-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.profile-label {
+
+    color: #243B53;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+
+}
+
+
+.profile-data-row span:last-child {
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* ===================================== */
+/* PROFILE ACTIONS */
+/* ===================================== */
+
+.profile-actions {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+/* ===================================== */
+/* BUTTONS */
+/* ===================================== */
+
+.profile-actions .button,
+
+#logout-button,
+
+#delete-account-button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    text-decoration: none;
+
+}
+
+
+/* Back + Logout */
+
+.profile-actions .button,
+#logout-button {
+
+    background-color: #243B53;
+
+    color: #ffffff;
+
+}
+
+
+.profile-actions .button:hover,
+#logout-button:hover {
+
+    background-color: #172b3d;
+
+}
+
+
+/* Delete */
+
+#delete-account-button {
+
+    background-color: #e30f0f;
+
+    color: #ffffff;
+
+}
+
+
+#delete-account-button:hover {
+
+    background-color: #b90c0c;
+
+}
+
+
+/* ===================================== */
+/* TABLET */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+    .profile-page {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .profile-card {
+
+        width: 480px;
+
+        padding: 30px 25px;
+
+    }
+
+
+    .profile-image-container {
+
+        width: 125px;
+
+        height: 125px;
+
+    }
+
+
+    .profile-header h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .profile-info h2 {
+
+        font-size: 23px;
+
+    }
+
+}
+
+
+/* ===================================== */
+/* MOBILE */
+/* ===================================== */
+
+@media (max-width: 480px) {
+
+    .profile-page {
+
+        padding: 20px 12px;
+
+        align-items: flex-start;
+
+    }
+
+
+    .profile-card {
+
+        width: 100%;
+
+        padding: 25px 18px;
+
+        border-radius: 16px;
+
+    }
+
+
+    .profile-image-container {
+
+        width: 110px;
+
+        height: 110px;
+
+    }
+
+
+    .profile-header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .profile-info h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .profile-data-row {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+
+        font-size: 15px;
+
+    }
+
+
+    .profile-actions .button,
+
+    #logout-button,
+
+    #delete-account-button {
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+
+/* =====================================
+
+   Course Pages
+
+\===================================== */
+
+
+
+.course-page {
+
+    min-height: 100vh;
+
+    background-color: #f8f6f0;
+
+    font-family: sans-serif;
+
+}
+
+
+
+
+
+/* Header */
+
+
+
+.course-header {
+
+    background-color: #243B53;
+
+    color: white;
+
+
+
+    padding: 40px 8%;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+
+
+
+
+.back-button {
+
+    width: fit-content;
+
+
+
+    color: white;
+
+    text-decoration: none;
+
+
+
+    border: 1px solid white;
+
+    border-radius: 8px;
+
+
+
+    padding: 10px 18px;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+.back-button:hover {
+
+    background-color: white;
+
+    color: #243B53;
+
+}
+
+
+
+
+
+.course-title {
+
+    text-align: center;
+
+}
+
+
+
+
+
+.course-title h1 {
+
+    font-size: 36px;
+
+    margin: 0 0 15px;
+
+}
+
+
+
+
+
+.course-title p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+
+
+
+
+/* Sections */
+
+
+
+.course-section {
+
+    width: 85%;
+
+    max-width: 1000px;
+
+
+
+    margin: 50px auto;
+
+}
+
+
+
+
+
+.course-section > h2 {
+
+    color: #243B53;
+
+
+
+    font-size: 28px;
+
+
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+/* Lessons */
+
+
+
+.lessons-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    gap: 15px;
+
+}
+
+
+
+
+
+.lesson-card {
+
+    background-color: white;
+
+
+
+    display: flex;
+
+    align-items: center;
+
+
+
+    gap: 20px;
+
+
+
+    padding: 20px;
+
+
+
+    border-radius: 12px;
+
+
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+
+
+.lesson-number {
+
+    min-width: 50px;
+
+    height: 50px;
+
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    background-color: #243B53;
+
+    color: white;
+
+
+
+    border-radius: 50%;
+
+
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+.lesson-info {
+
+    flex: 1;
+
+}
+
+
+
+
+
+.lesson-info h3 {
+
+    color: #243B53;
+
+
+
+    margin: 0 0 8px;
+
+}
+
+
+
+
+
+.lesson-info p {
+
+    color: #666666;
+
+
+
+    margin: 0;
+
+}
+
+
+
+
+
+.lesson-card button,
+
+.material-card button {
+
+    background-color: #e30f0f;
+
+    color: white;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    padding: 10px 18px;
+
+
+
+    cursor: pointer;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+.lesson-card button:hover,
+
+.material-card button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+
+
+/* Materials */
+
+
+
+.materials-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    gap: 15px;
+
+}
+
+
+
+
+
+.material-card {
+
+    background-color: white;
+
+
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+
+    padding: 20px;
+
+
+
+    border-radius: 12px;
+
+
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+
+
+.material-card h3 {
+
+    color: #243B53;
+
+    margin: 0 0 5px;
+
+}
+
+
+
+
+
+.material-card p {
+
+    color: #777777;
+
+    margin: 0;
+
+}
+
+
+
+
+
+/* Exams */
+
+
+
+.exam-card {
+
+    background-color: white;
+
+
+
+    padding: 30px;
+
+
+
+    text-align: center;
+
+
+
+    border-radius: 12px;
+
+
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+
+
+.exam-card h3 {
+
+    color: #243B53;
+
+}
+
+
+
+
+
+.exam-card p {
+
+    color: #777777;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+
+@media (max-width: 700px) {
+
+
+
+    .course-title h1 {
+
+        font-size: 28px;
+
+    }
+
+
+
+    .course-section {
+
+        width: 90%;
+
+    }
+
+
+
+    .lesson-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+
+    .lesson-card button {
+
+        width: 100%;
+
+    }
+
+
+
+    .material-card {
+
+        flex-direction: column;
+
+
+
+        text-align: center;
+
+
+
+        gap: 15px;
+
+    }
+
+
+
+    .material-card button {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+/* =====================================
+
+   Teacher Dashboard
+
+\===================================== */
+
+
+
+.teacher-page {
+
+    min-height: 100vh;
+
+    background-color: #f8f6f0;
+
+    font-family: sans-serif;
+
+}
+
+
+
+
+
+/* Sidebar */
+
+
+
+.teacher-sidebar {
+
+    position: fixed;
+
+
+
+    top: 0;
+
+    right: 0;
+
+
+
+    width: 230px;
+
+    height: 100vh;
+
+
+
+    background-color: #243B53;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+
+
+    padding: 30px 20px;
+
+
+
+    box-sizing: border-box;
+
+
+
+    z-index: 1000;
+
+}
+
+
+
+
+
+.teacher-logo img {
+
+    width: 130px;
+
+    max-height: 100px;
+
+
+
+    object-fit: contain;
+
+
+
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+.teacher-nav-links {
+
+    width: 100%;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    gap: 15px;
+
+}
+
+
+
+
+
+.teacher-nav-links a {
+
+    width: 100%;
+
+
+
+    color: white;
+
+
+
+    text-decoration: none;
+
+    text-align: center;
+
+
+
+    padding: 12px;
+
+
+
+    border-radius: 8px;
+
+
+
+    box-sizing: border-box;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+.teacher-nav-links a:hover {
+
+    background-color: #e30f0f;
+
+}
+
+
+
+
+
+/* Main content */
+
+
+
+.teacher-content {
+
+    margin-right: 230px;
+
+
+
+    padding: 50px;
+
+
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+/* Welcome */
+
+
+
+.teacher-welcome {
+
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+.teacher-welcome h1 {
+
+    color: #243B53;
+
+
+
+    font-size: 34px;
+
+
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+.teacher-welcome p {
+
+    color: #666666;
+
+
+
+    font-size: 18px;
+
+}
+
+
+
+
+
+/* Courses */
+
+
+
+.teacher-courses h2,
+
+.teacher-exams h2 {
+
+    color: #243B53;
+
+
+
+    font-size: 28px;
+
+
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+.teacher-courses-container {
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+    gap: 20px;
+
+
+
+    margin-bottom: 60px;
+
+}
+
+
+
+
+
+.teacher-course-card {
+
+    background-color: white;
+
+
+
+    padding: 25px;
+
+
+
+    border-radius: 15px;
+
+
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+
+
+.teacher-course-card h3 {
+
+    color: #243B53;
+
+
+
+    margin-top: 0;
+
+
+
+    font-size: 21px;
+
+}
+
+
+
+
+
+.teacher-course-card p {
+
+    color: #666666;
+
+
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+/* Course buttons */
+
+
+
+.teacher-actions {
+
+    display: flex;
+
+
+
+    gap: 10px;
+
+
+
+    margin-top: 20px;
+
+}
+
+
+
+
+
+.teacher-actions button {
+
+    flex: 1;
+
+
+
+    background-color: #243B53;
+
+    color: white;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    padding: 11px;
+
+
+
+    cursor: pointer;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+.teacher-actions button:hover {
+
+    background-color: #e30f0f;
+
+}
+
+
+
+
+
+/* Exams */
+
+
+
+.teacher-exams {
+
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+.teacher-section-header {
+
+    display: flex;
+
+
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+
+    gap: 20px;
+
+
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+
+.teacher-section-header h2 {
+
+    margin-bottom: 5px;
+
+}
+
+
+
+
+
+.teacher-section-header p {
+
+    color: #666666;
+
+
+
+    margin: 0;
+
+}
+
+
+
+
+
+.create-exam-button {
+
+    background-color: #e30f0f;
+
+    color: white;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    padding: 12px 20px;
+
+
+
+    cursor: pointer;
+
+
+
+    font-size: 15px;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+.create-exam-button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+
+
+/* Empty exams */
+
+
+
+.teacher-empty-state {
+
+    background-color: white;
+
+
+
+    text-align: center;
+
+
+
+    padding: 45px 20px;
+
+
+
+    border-radius: 15px;
+
+
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+
+
+.teacher-empty-state h3 {
+
+    color: #243B53;
+
+}
+
+
+
+
+
+.teacher-empty-state p {
+
+    color: #777777;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+
+@media (max-width: 800px) {
+
+
+
+    .teacher-sidebar {
+
+        position: relative;
+
+
+
+        width: 100%;
+
+        height: auto;
+
+
+
+        padding: 20px;
+
+    }
+
+
+
+
+
+    .teacher-logo img {
+
+        margin-bottom: 20px;
+
+    }
+
+
+
+
+
+    .teacher-nav-links {
+
+        flex-direction: row;
+
+        justify-content: center;
+
+
+
+        flex-wrap: wrap;
+
+    }
+
+
+
+
+
+    .teacher-nav-links a {
+
+        width: auto;
+
+    }
+
+
+
+
+
+    .teacher-content {
+
+        margin-right: 0;
+
+
+
+        padding: 30px 20px;
+
+    }
+
+
+
+
+
+    .teacher-courses-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+
+
+    .teacher-section-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+
+}
+
+
+
+/* =====================================
+
+   Teacher Forms
+
+\===================================== */
+
+
+
+.teacher-form-page {
+
+    min-height: 100vh;
+
+
+
+    background-color: #f8f6f0;
+
+
+
+    font-family: sans-serif;
+
+
+
+    padding: 50px 20px;
+
+
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+.teacher-form-container {
+
+    width: 650px;
+
+    max-width: 100%;
+
+
+
+    margin: auto;
+
+
+
+    background-color: white;
+
+
+
+    padding: 35px;
+
+
+
+    border-radius: 15px;
+
+
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+
+
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+.exam-form-container {
+
+    width: 800px;
+
+}
+
+
+
+
+
+.form-back-button {
+
+    display: inline-block;
+
+
+
+    color: #243B53;
+
+
+
+    text-decoration: none;
+
+
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+.form-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+.form-header h1 {
+
+    color: #243B53;
+
+
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+.form-header p {
+
+    color: #777777;
+
+}
+
+
+
+
+
+/* Form */
+
+
+
+.teacher-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    gap: 12px;
+
+}
+
+
+
+
+
+.teacher-form label {
+
+    color: #243B53;
+
+
+
+    font-weight: bold;
+
+
+
+    margin-top: 10px;
+
+}
+
+
+
+
+
+.teacher-form input,
+
+.teacher-form select,
+
+.teacher-form textarea {
+
+    width: 100%;
+
+
+
+    padding: 12px;
+
+
+
+    border: 1px solid #cccccc;
+
+    border-radius: 8px;
+
+
+
+    font-family: sans-serif;
+
+
+
+    box-sizing: border-box;
+
+
+
+    outline: none;
+
+}
+
+
+
+
+
+.teacher-form input:focus,
+
+.teacher-form select:focus,
+
+.teacher-form textarea:focus {
+
+    border-color: #243B53;
+
+}
+
+
+
+
+
+/* Submit */
+
+
+
+.teacher-submit-button {
+
+    background-color: #e30f0f;
+
+    color: white;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    padding: 13px;
+
+
+
+    margin-top: 20px;
+
+
+
+    font-size: 16px;
+
+
+
+    cursor: pointer;
+
+
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+.teacher-submit-button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+
+
+/* Exam settings */
+
+
+
+.exam-settings {
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+    gap: 20px;
+
+}
+
+
+
+
+
+.exam-settings div {
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    gap: 10px;
+
+}
+
+
+
+
+
+/* Question */
+
+
+
+.question-builder {
+
+    background-color: #f8f6f0;
+
+
+
+    padding: 25px;
+
+
+
+    border-radius: 12px;
+
+
+
+    margin-top: 25px;
+
+}
+
+
+
+
+
+.question-builder h2 {
+
+    color: #243B53;
+
+
+
+    margin-top: 0;
+
+}
+
+
+
+
+
+.answer-option {
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 10px;
+
+
+
+    margin-top: 10px;
+
+}
+
+
+
+
+
+.answer-option input[type="radio"] {
+
+    width: auto;
+
+}
+
+
+
+
+
+.add-question-button {
+
+    background-color: #243B53;
+
+    color: white;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    padding: 12px;
+
+
+
+    cursor: pointer;
+
+
+
+    margin-top: 15px;
+
+}
+
+
+
+
+
+/* Mobile */
+
+
+
+@media (max-width: 600px) {
+
+
+
+    .teacher-form-page {
+
+        padding: 20px 10px;
+
+    }
+
+
+
+
+
+    .teacher-form-container {
+
+        padding: 20px;
+
+    }
+
+
+
+
+
+    .exam-settings {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+}
+/* =========================================================
+   FINAL PROJECT FIXES + RESPONSIVE
+   Added after full CSS review
+========================================================= */
+
+/* Prevent accidental horizontal page scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Keep media inside the viewport */
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+/* ---------------------------------------------------------
+   Landing page fixes
+--------------------------------------------------------- */
+
+.hero_img img {
+    object-fit: cover;
+}
+
+.hero-btn {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.des_hero {
+    margin-left: 0;
+}
+
+.Courses_Section {
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+}
+
+/* ---------------------------------------------------------
+   Login / Register
+--------------------------------------------------------- */
+
+.login-card {
+    width: min(420px, 90%);
+}
+
+.login-card h2 {
+    text-align: center;
+    color: #243B53;
+    margin-bottom: 25px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    padding: 12px 20px;
+}
+
+/* ---------------------------------------------------------
+   Student page
+--------------------------------------------------------- */
+
+.student-page {
+    min-height: 100vh;
+    padding-right: 220px;
+    background-color: #F8F6F0;
+}
+
+.navbar_student {
+    margin-top: 0;
+}
+
+.navbar_student .logo {
+    margin-bottom: 40px;
+}
+
+.navbar_student .logo img {
+    display: block;
+}
+
+.welcome-section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.courses-section {
+    width: 100%;
+    padding: 0 25px 50px;
+    box-sizing: border-box;
+}
+
+.courses-container {
+    grid-template-columns: repeat(4, minmax(220px, 300px));
+    align-items: stretch;
+}
+
+.course-card {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card img {
+    flex-shrink: 0;
+}
+
+.course-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.course-content h2,
+.course-content h3,
+.course-content p {
+    overflow-wrap: anywhere;
+}
+
+.course-content .az {
+    margin-top: auto;
+    align-self: center;
+}
+
+.az {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ---------------------------------------------------------
+   Profile
+--------------------------------------------------------- */
+
+.info-card {
+    overflow: hidden;
+}
+
+.student-info {
+    width: 100%;
+}
+
+.student-info h2,
+.student-info p {
+    overflow-wrap: anywhere;
+}
+
+/* ---------------------------------------------------------
+   Course pages
+--------------------------------------------------------- */
+
+.course-header,
+.course-section {
+    box-sizing: border-box;
+}
+
+.lesson-card,
+.material-card,
+.exam-card {
+    overflow-wrap: anywhere;
+}
+
+/* ---------------------------------------------------------
+   Teacher dashboard
+--------------------------------------------------------- */
+
+.teacher-action-link,
+.create-exam-button {
+    text-decoration: none;
+}
+
+.teacher-action-link {
+    display: block;
+    width: 100%;
+    background-color: #243B53;
+    color: #ffffff;
+    text-align: center;
+    padding: 11px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.teacher-action-link:hover {
+    background-color: #e30f0f;
+}
+
+.create-exam-button {
+    display: inline-block;
+    text-align: center;
+}
+
+.teacher-actions {
+    width: 100%;
+}
+
+.teacher-content {
+    min-width: 0;
+}
+
+.teacher-course-card {
+    min-width: 0;
+}
+
+/* ---------------------------------------------------------
+   Teacher forms
+--------------------------------------------------------- */
+
+.teacher-form-container {
+    overflow: hidden;
+}
+
+.teacher-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.answer-option input[type="text"] {
+    min-width: 0;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .hero_section {
+        padding: 60px 5%;
+        gap: 35px;
+    }
+
+    .hero_img img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .church-bg {
+        width: 320px;
+    }
+
+    .Courses_Section {
+        justify-content: center;
+    }
+
+    .student-page {
+        padding-right: 200px;
+    }
+
+    .navbar_student {
+        width: 200px;
+    }
+
+    .courses-container {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .teacher-content {
+        padding: 35px;
+    }
+}
+
+/* =========================================================
+   MOBILE / SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    /* Landing page */
+
+    header {
+        position: relative;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bottoms {
+        flex-wrap: wrap;
+    }
+
+    .hero_section {
+        flex-direction: column;
+        padding: 45px 20px;
+        gap: 30px;
+    }
+
+    .hero_img {
+        order: 1;
+    }
+
+    .des_hero {
+        order: 2;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hero_img img {
+        width: min(300px, 80vw);
+        height: min(300px, 80vw);
+    }
+
+    .church-bg {
+        width: 190px;
+        left: -35px;
+        bottom: 50px;
+        opacity: 0.08;
+    }
+
+    .des_hero h2 {
+        font-size: 32px;
+    }
+
+    .des_hero p {
+        font-size: 16px;
+    }
+
+    .Courses_Section {
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 20px;
+    }
+
+    .card {
+        width: min(100%, 420px);
+        margin-top: 20px;
+    }
+
+    /* Login / Register */
+
+    .login-page {
+        min-height: 100svh;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .circle1 {
+        width: 520px;
+        height: 520px;
+    }
+
+    .circle2 {
+        width: 180px;
+        height: 180px;
+        right: -40px;
+        top: 60px;
+    }
+
+    .circle3 {
+        width: 80px;
+        height: 80px;
+        left: 20px;
+        bottom: 70px;
+    }
+
+    .form {
+        gap: 22px;
+    }
+
+    /* Student page */
+
+    .student-page {
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .navbar_student {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: auto;
+        padding: 18px 15px;
+        flex-direction: column;
+    }
+
+    .navbar_student .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-links .aa {
+        width: auto;
+        min-width: 95px;
+    }
+
+    .welcome-section {
+        padding: 30px 15px 0;
+    }
+
+    .welcome-section h1 {
+        font-size: 27px;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+    }
+
+    .courses-section {
+        padding: 0 15px 40px;
+    }
+
+    .courses-section h1 {
+        margin-top: 40px;
+    }
+
+    .courses-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        max-width: 650px;
+    }
+
+    .course-card {
+        min-height: 0;
+    }
+
+    .course-card img {
+        height: 220px;
+    }
+
+    /* Profile */
+
+    .profile-page {
+        padding: 25px 15px;
+    }
+
+    .info-card {
+        padding: 28px 22px;
+    }
+
+    /* Course pages */
+
+    .course-header {
+        padding: 30px 20px;
+    }
+
+    .course-title h1 {
+        font-size: 30px;
+    }
+
+    .course-title p {
+        font-size: 16px;
+    }
+
+    .course-section {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    /* Teacher dashboard */
+
+    .teacher-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .teacher-logo img {
+        margin-bottom: 15px;
+    }
+
+    .teacher-nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .teacher-nav-links a {
+        width: auto;
+        min-width: 110px;
+    }
+
+    .teacher-content {
+        margin-right: 0;
+        padding: 30px 20px;
+    }
+
+    .teacher-courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-section-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .create-exam-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* =========================================================
+   PHONES
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .bottoms {
+        gap: 8px;
+    }
+
+    .bottoms a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .des_hero h2 {
+        font-size: 27px;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .Courses_Section {
+        padding-inline: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .login-card {
+        width: 100%;
+    }
+
+    .circle1 {
+        width: 430px;
+        height: 430px;
+    }
+
+    .student-image {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile-page > h1 {
+        font-size: 28px;
+    }
+
+    .courses-container {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+    }
+
+    .course-card img {
+        height: 240px;
+    }
+
+    .course-content {
+        padding: 18px;
+    }
+
+    .lesson-card,
+    .material-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lesson-card button,
+    .material-card button {
+        width: 100%;
+    }
+
+    .teacher-content {
+        padding: 25px 15px;
+    }
+
+    .teacher-welcome h1 {
+        font-size: 28px;
+    }
+
+    .teacher-actions {
+        flex-direction: column;
+    }
+
+    .teacher-form-page {
+        padding: 20px 10px;
+    }
+
+    .teacher-form-container {
+        padding: 20px 16px;
+    }
+
+    .form-header h1 {
+        font-size: 27px;
+    }
+
+    .exam-settings {
+        grid-template-columns: 1fr;
+    }
+
+    .question-builder {
+        padding: 18px 14px;
+    }
+
+    .answer-option {
+        align-items: center;
+    }
+
+    .answer-option input[type="radio"] {
+        flex: 0 0 auto;
+    }
+
+    .answer-option input[type="text"] {
+        flex: 1;
+    }
+}
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero_img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .des_hero h2 {
+        font-size: 24px;
+    }
+
+    .nav-links .aa,
+    .teacher-nav-links a {
+        width: 100%;
+    }
+
+    .info-card {
+        padding: 22px 15px;
+    }
+
+    .course-title h1 {
+        font-size: 25px;
+    }
+
+    .teacher-form-container {
+        padding: 18px 12px;
+    }
+}
+/* ============================================= */
+/* TEACHER RESULTS */
+/* ============================================= */
+
+.teacher-results {
+    margin-top: 40px;
+}
+
+
+.teacher-results-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+
+.teacher-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.teacher-results-table th,
+.teacher-results-table td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.teacher-results-table th {
+    font-weight: 700;
+    background: #f5f5f5;
+}
+
+
+.teacher-results-table tbody tr {
+    transition: 0.2s ease;
+}
+
+
+.teacher-results-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* ============================================= */
+/* MOBILE */
+/* ============================================= */
+
+@media (max-width: 768px) {
+
+    .teacher-results-container {
+        overflow-x: auto;
+    }
+
+
+    .teacher-results-table {
+        min-width: 850px;
+    }
+
+
+    .teacher-results-table th,
+    .teacher-results-table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}
+
+.logo .person-logo {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    flex: 0 0 140px;
+}
+.person-logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+/* =====================================================
+   ADMIN DASHBOARD
+===================================================== */
+
+.admin-header {
+    background: #18324d;
+    color: white;
+    padding: 24px 0;
+}
+
+.admin-header .container,
+.admin-page .container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+.admin-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#logout-button {
+    border: none;
+    background: white;
+    color: #18324d;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#logout-button:hover {
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.admin-page {
+    background: #f6f4ef;
+    min-height: calc(100vh - 90px);
+    padding: 40px 0 60px;
+}
+
+
+/* =====================================================
+   WELCOME
+===================================================== */
+
+.admin-welcome {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admin-welcome h2 {
+    margin-top: 0;
+    color: #18324d;
+    font-size: 24px;
+}
+
+.admin-welcome p {
+    margin-bottom: 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.admin-section {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admin-section-header {
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.admin-section-header h2 {
+    margin: 0;
+    color: #18324d;
+    font-size: 23px;
+}
+
+
+/* =====================================================
+   USERS
+===================================================== */
+
+.admin-users-container {
+    display: grid;
+    gap: 18px;
+}
+
+.admin-user-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.admin-user-card h3 {
+    margin-top: 0;
+    color: #18324d;
+}
+
+.admin-user-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+
+/* =====================================================
+   COURSE ACCESS FORM
+===================================================== */
+
+.admin-access-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #18324d;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group select:focus {
+    border-color: #18324d;
+}
+
+
+/* =====================================================
+   GRANT BUTTON
+===================================================== */
+
+#grant-access-button {
+    border: none;
+    background: #18324d;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 46px;
+}
+
+#grant-access-button:hover {
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .admin-access-form {
+        grid-template-columns: 1fr;
+    }
+
+    #grant-access-button {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .admin-header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-header h1 {
+        font-size: 23px;
+    }
+
+    .admin-page {
+        padding-top: 24px;
+    }
+
+    .admin-welcome,
+    .admin-section {
+        padding: 20px;
+    }
+
+}
+/* ===================================================== */
+/* ADMIN DASHBOARD */
+/* ===================================================== */
+
+.admin-page {
+    min-height: 100vh;
+    padding: 40px 0;
+    background: #f7f5ef;
+}
+
+
+/* ===================================================== */
+/* HEADER */
+/* ===================================================== */
+
+.admin-header {
+    background: #173653;
+    padding: 18px 0;
+    color: white;
+}
+
+.admin-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+#logout-button {
+    border: none;
+    background: white;
+    color: #173653;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#logout-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ===================================================== */
+/* WELCOME */
+/* ===================================================== */
+
+.admin-welcome {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.admin-welcome h2 {
+    margin-top: 0;
+    color: #173653;
+}
+
+.admin-welcome p {
+    margin-bottom: 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ===================================================== */
+/* SECTION */
+/* ===================================================== */
+
+.admin-section {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.admin-section-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-section-header h2 {
+    margin: 0 0 8px;
+    color: #173653;
+}
+
+.admin-section-header p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* ===================================================== */
+/* USERS CONTAINER */
+/* ===================================================== */
+
+.admin-users-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(320px, 1fr)
+    );
+    gap: 20px;
+}
+
+
+/* ===================================================== */
+/* USER CARD */
+/* ===================================================== */
+
+.admin-user-card {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 20px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.admin-user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.admin-user-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #173653;
+    font-size: 20px;
+}
+
+.admin-user-card p {
+    margin: 7px 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+.admin-user-card strong {
+    color: #173653;
+}
+
+
+/* ===================================================== */
+/* USER ACTIONS */
+/* ===================================================== */
+
+.admin-user-actions {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.admin-user-actions .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-user-actions label {
+    font-weight: bold;
+    color: #173653;
+}
+
+.admin-user-actions select {
+    width: 100%;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.admin-user-actions select:focus {
+    outline: none;
+    border-color: #173653;
+}
+
+.admin-user-actions select:disabled {
+    background: #eee;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+/* ===================================================== */
+/* DELETE USER */
+/* ===================================================== */
+
+.delete-user-button {
+    border: none;
+    background: #b42318;
+    color: white;
+    padding: 11px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-user-button:hover {
+    background: #8f1c13;
+}
+
+.admin-protected-text {
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    color: #777 !important;
+    text-align: center;
+}
+
+
+/* ===================================================== */
+/* COURSE ACCESS FORM */
+/* ===================================================== */
+
+.admin-access-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    align-items: end;
+}
+
+.admin-access-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.admin-access-form label {
+    font-weight: bold;
+    color: #173653;
+}
+
+.admin-access-form select {
+    height: 46px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+}
+
+.admin-access-form select:focus {
+    outline: none;
+    border-color: #173653;
+}
+
+#grant-access-button {
+    min-height: 46px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 8px;
+    background: #173653;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#grant-access-button:hover {
+    background: #0f2940;
+}
+
+#grant-access-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ===================================================== */
+/* ACTIVE COURSE ACCESS */
+/* ===================================================== */
+
+.course-access-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+    gap: 18px;
+}
+
+.admin-access-card {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.admin-access-card h3 {
+    margin-top: 0;
+    color: #173653;
+}
+
+.admin-access-card p {
+    margin: 7px 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+.admin-access-card strong {
+    color: #173653;
+}
+
+
+/* ===================================================== */
+/* REVOKE COURSE BUTTON */
+/* ===================================================== */
+
+.revoke-course-button {
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    background: #a15c00;
+    color: white;
+    padding: 11px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.revoke-course-button:hover {
+    background: #7c4700;
+}
+
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+@media (max-width: 900px) {
+
+    .admin-access-form {
+        grid-template-columns: 1fr;
+    }
+
+    #grant-access-button {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-page {
+        padding: 20px 0;
+    }
+
+    .admin-header-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-header h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    #logout-button {
+        width: 100%;
+    }
+
+    .admin-welcome,
+    .admin-section {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .admin-users-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-access-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ===================================================== */
+/* PHILOMARIA - STUDENT EXAM PAGE */
+/* ===================================================== */
+
+.student-exam-page {
+    width: 100%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* ===================================================== */
+/* HEADER */
+/* ===================================================== */
+
+.student-exam-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background: #243f5b;
+    color: white;
+
+    padding: 25px 30px;
+
+    border-radius: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+.student-exam-header > div {
+    flex: 1;
+}
+
+
+.student-exam-header h1 {
+    margin: 0 0 8px 0;
+
+    font-size: 28px;
+
+    color: white;
+}
+
+
+.student-exam-header p {
+    margin: 0;
+
+    color: #e8edf3;
+}
+
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid white;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.back-button:hover {
+    background: white;
+    color: #243f5b;
+}
+
+
+/* ===================================================== */
+/* EXAM INFORMATION */
+/* ===================================================== */
+
+.student-exam-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.student-exam-info p {
+    margin: 0;
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.student-exam-info strong {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 20px;
+
+    color: #243f5b;
+}
+
+
+#exam-timer {
+    color: #d71920;
+}
+
+
+/* ===================================================== */
+/* MESSAGE */
+/* ===================================================== */
+
+.exam-message {
+    margin-bottom: 20px;
+
+    padding: 15px 18px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+.exam-message:empty {
+    display: none;
+}
+
+
+/* ===================================================== */
+/* FORM */
+/* ===================================================== */
+
+.student-exam-form {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===================================================== */
+/* QUESTIONS */
+/* ===================================================== */
+
+.exam-questions-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* يدعم الكروت التي يتم إنشاؤها من JavaScript */
+
+.exam-question,
+.question-card,
+.exam-question-card {
+    background: #f9fafc;
+
+    border: 1px solid #e4e8ee;
+
+    border-radius: 14px;
+
+    padding: 22px;
+}
+
+
+.exam-question h3,
+.question-card h3,
+.exam-question-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 18px;
+
+    color: #243f5b;
+
+    font-size: 20px;
+}
+
+
+/* ===================================================== */
+/* ANSWERS */
+/* ===================================================== */
+
+.exam-question label,
+.question-card label,
+.exam-question-card label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #dfe3e8;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+
+.exam-question label:hover,
+.question-card label:hover,
+.exam-question-card label:hover {
+    border-color: #243f5b;
+
+    background: #f3f6f9;
+}
+
+
+.exam-question input[type="radio"],
+.question-card input[type="radio"],
+.exam-question-card input[type="radio"] {
+    width: 18px;
+
+    height: 18px;
+
+    cursor: pointer;
+}
+
+
+/* ===================================================== */
+/* SUBMIT BUTTON */
+/* ===================================================== */
+
+#submit-exam-button {
+    display: block;
+
+    width: 220px;
+
+    margin: 35px auto 0;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #d71920;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#submit-exam-button:hover {
+    background: #b8151b;
+
+    transform: translateY(-2px);
+}
+
+
+#submit-exam-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* ===================================================== */
+/* RESULT */
+/* ===================================================== */
+
+.exam-result {
+    margin-top: 25px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.exam-result h2 {
+    margin-top: 0;
+
+    color: #243f5b;
+}
+
+
+.exam-result p {
+    margin: 12px 0;
+
+    font-size: 17px;
+}
+
+
+.exam-result strong {
+    color: #243f5b;
+}
+
+
+/* ===================================================== */
+/* BACK TO COURSE BUTTON */
+/* ===================================================== */
+
+#back-to-course-button {
+    display: inline-flex;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+}
+
+
+/* ===================================================== */
+/* TABLET */
+/* ===================================================== */
+
+@media (
+    max-width: 768px
+) {
+
+    .student-exam-page {
+        margin: 20px auto;
+
+        padding: 15px;
+    }
+
+
+    .student-exam-header {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+
+    .back-button {
+        align-self: flex-start;
+    }
+
+
+    .student-exam-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .student-exam-form {
+        padding: 20px;
+    }
+
+
+    #submit-exam-button {
+        width: 100%;
+    }
+
+}
+
+
+/* ===================================================== */
+/* MOBILE */
+/* ===================================================== */
+
+@media (
+    max-width: 480px
+) {
+
+    .student-exam-page {
+        padding: 10px;
+    }
+
+
+    .student-exam-header h1 {
+        font-size: 22px;
+    }
+
+
+    .student-exam-info p {
+        padding: 14px;
+    }
+
+
+    .exam-question,
+    .question-card,
+    .exam-question-card {
+        padding: 16px;
+    }
+
+
+    .exam-question h3,
+    .question-card h3,
+    .exam-question-card h3 {
+        font-size: 18px;
+    }
+
+}
+/* =========================================
+   PROFILE - LOGOUT BUTTON
+========================================= */
+
+#logout-button {
+    background-color: #2f4b63;
+    color: #ffffff;
+    border: none;
+    transition: 0.3s ease;
+}
+
+#logout-button:hover {
+    background-color: #456b8a;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#logout-button:focus {
+    background-color: #456b8a;
+    color: #ffffff;
+    outline: none;
+}

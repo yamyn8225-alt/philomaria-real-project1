@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إنشاء كورس - Philomaria</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="teacher-form-page">
+
+        <div class="teacher-form-container">
+
+            <!-- Back Button -->
+            <a
+                href="teacher.html"
+                class="form-back-button"
+            >
+                العودة للوحة المدرس
+            </a>
+
+
+            <!-- Header -->
+            <div class="form-header">
+
+                <h1>
+                    إنشاء كورس جديد
+                </h1>
+
+                <p>
+                    أضف بيانات الكورس وحدد السنة الدراسية والترم والسعر.
+                </p>
+
+            </div>
+
+
+            <!-- Create Course Form -->
+            <form
+                class="teacher-form"
+                id="create-course-form"
+            >
+
+                <!-- Course Title -->
+                <label for="course-title">
+                    اسم الكورس
+                </label>
+
+                <input
+                    type="text"
+                    id="course-title"
+                    name="course-title"
+                    placeholder="مثال: دراسة الكتاب المقدس"
+                    required
+                >
+
+
+                <!-- Study Year -->
+                <label for="course-study-year">
+                    السنة الدراسية
+                </label>
+
+                <select
+                    id="course-study-year"
+                    name="course-study-year"
+                    required
+                >
+
+                    <option value="">
+                        اختر السنة الدراسية
+                    </option>
+
+                    <option value="1">
+                        السنة الأولى
+                    </option>
+
+                    <option value="2">
+                        السنة الثانية
+                    </option>
+
+                    <option value="3">
+                        السنة الثالثة
+                    </option>
+
+                </select>
+
+
+                <!-- Study Term -->
+                <label for="course-study-term">
+                    الترم
+                </label>
+
+                <select
+                    id="course-study-term"
+                    name="course-study-term"
+                    required
+                >
+
+                    <option value="">
+                        اختر الترم
+                    </option>
+
+                    <option value="1">
+                        الترم الأول
+                    </option>
+
+                    <option value="2">
+                        الترم الثاني
+                    </option>
+
+                    <option value="3">
+                        الترم الثالث
+                    </option>
+
+                </select>
+
+
+                <!-- Course Description -->
+                <label for="course-description">
+                    وصف الكورس
+                </label>
+
+                <textarea
+                    id="course-description"
+                    name="course-description"
+                    rows="5"
+                    placeholder="اكتب وصفًا مختصرًا للكورس"
+                    required
+                ></textarea>
+
+
+                <!-- Course Price -->
+                <label for="course-price">
+                    سعر الكورس
+                </label>
+
+                <input
+                    type="number"
+                    id="course-price"
+                    name="course-price"
+                    placeholder="مثال: 300"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <small>
+                    اكتب 0 إذا كان الكورس مجانيًا.
+                </small>
+
+
+                <!-- Course Image -->
+                <label for="course-image">
+                    صورة الكورس
+                </label>
+
+                <input
+                    type="file"
+                    id="course-image"
+                    name="course-image"
+                    accept="image/*"
+                    required
+                >
+
+
+                <!-- Image Preview -->
+                <div
+                    id="course-image-preview-container"
+                    style="display: none;"
+                >
+
+                    <img
+                        id="course-image-preview"
+                        src=""
+                        alt="معاينة صورة الكورس"
+                    >
+
+                </div>
+
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="teacher-submit-button"
+                    id="create-course-button"
+                >
+                    إنشاء الكورس
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="create-course.js"></script>
+
+</body>
+
+</html>
